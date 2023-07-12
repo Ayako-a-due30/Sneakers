@@ -164,7 +164,7 @@ section {
 // スライドショーーーーーーーーーーーーーー
 .swiper {
   /*スライダーの幅と高さを調整*/
-  width: min(100%, 600px);
+  width: 110%;
   height: 300px;
 }
 
@@ -181,16 +181,17 @@ section {
   /*テキストの色と太さを指定*/
   color: #fff;
   font-weight: bold;
+  img {
+    width: 100%;
+  }
 }
 
-/*①各スライドに以下クラスを追加で付与*/
-/*②スライド背景色を設定*/
 // FEATURE-------------------------
 
 .feature-list {
-  margin: 5%;
+  margin: 10%;
   display: grid;
-  gap: 5%;
+  gap: 26px;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   .feature-item {
     img {

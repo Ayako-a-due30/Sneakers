@@ -36,5 +36,16 @@ mask.addEventListener('click',()=>{
     mask.classList.toggle('active');
     navi.classList.toggle('active');
 })
-
-const swiper = new Swiper(".swiper",{});
+//PICK UP(SWIPER)-----------------------------
+const swiper = new Swiper(".swiper",{
+  slidesPerView:1.5,
+  spaceBetween:10,
+  breakpoints:{
+    960:{
+      spaceBetween:10,
+      slidesPerView:5,
+      // centeredSlides:true,
+    }
+  }
+},
+);
