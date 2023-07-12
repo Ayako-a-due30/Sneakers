@@ -1,22 +1,25 @@
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="css/style.scss">
+    <title>Sneakers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header id="header">
-        <h1 class="site-title">
+        <h1 class="site-title" id="site-title">
             <a href="index.html">
-                <img src="img/logo.svg" alt="">
+                <img src="img/logo.svg" alt="" class="header-logo">
             </a>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </h1>
         <nav id="navi">
             <ul class="nav-menu">
@@ -35,67 +38,195 @@
             <span></span>
             <span></span>
         </div>
-        <div id="main"></div>
+        <div id="mask"></div>
     </header>
     <main id="main">
         <div id="video">
-            <video src="" id="bg-video"></video>
+            <video src="img/video.mov" id="bg-video" loop autoplay muted playsinline></video>
         </div>
         <section id="pickup">
+
             <h2 class="sec-title">PICK UP</h2>
-            <ul class="pickup-list">
-                <li class="pickup-item"><img src="img/pickup1.jpg" alt=""></li>
-                <li class="pickup-item"><img src="img/pickup2.jpg" alt=""></li>
-                <li class="pickup-item"><img src="img/pickup3.jpg" alt=""></li>
-                <li class="pickup-item"><img src="img/pickup4.jpg" alt=""></li>
-                <li class="pickup-item"><img src="img/pickup5.jpg" alt=""></li>
-                <li class="pickup-item"><img src="img/pickup6.jpg" alt=""></li>
-                <li class="pickup-item"><img src="img/pickup7.jpg" alt=""></li>
-                <li class="pickup-item"><img src="img/pickup8.jpg" alt=""></li>
-                <li class="pickup-item"><img src="img/pickup9.jpg" alt=""></li>
-            </ul>
+
+            <!-- Sliderを包むコンテナ要素 -->
+            <div class="swiper">
+                <!-- スライド要素を包む要素 -->
+                <div class="swiper-wrapper">
+                    <!-- 各スライド -->
+                    <div class="swiper-slide slide1"><img src="img/pickup1.jpg" alt=""></div>
+                    <div class="swiper-slide slide1"><img src="img/pickup2.jpg" alt=""></div>
+                    <div class="swiper-slide slide1"><img src="img/pickup3.jpg" alt=""></div>
+                    <div class="swiper-slide slide1"><img src="img/pickup4.jpg" alt=""></div>
+                    <div class="swiper-slide slide1"><img src="img/pickup5.jpg" alt=""></div>
+                    <div class="swiper-slide slide1"><img src="img/pickup6.jpg" alt=""></div>
+                    <div class="swiper-slide slide1"><img src="img/pickup7.jpg" alt=""></div>
+                    <div class="swiper-slide slide1"><img src="img/pickup8.jpg" alt=""></div>
+                    <div class="swiper-slide slide1"><img src="img/pickup9.jpg" alt=""></div>
+                </div>
+            </div>
+
         </section>
         <section id="feature">
-            <h2 class="sec-title">PICK UP</h2>
+            <h2 class="sec-title">FEATURE</h2>
             <ul class="feature-list">
-                <li class="feature-item"><img src="img/feature1.jpg" alt=""></li>
-                <li class="feature-item"><img src="img/feature2.jpg" alt=""></li>
-                <li class="feature-item"><img src="img/feature3.jpg" alt=""></li>
-                <li class="feature-item"><img src="img/feature4.jpg" alt=""></li>
-                <li class="feature-item"><img src="img/feature5.jpg" alt=""></li>
-                <li class="feature-item"><img src="img/feature6.jpg" alt=""></li>
-                <li class="feature-item"><img src="img/feature7.jpg" alt=""></li>
-                <li class="feature-item"><img src="img/feature8.jpg" alt=""></li>
-                <li class="feature-item"><img src="img/feature9.jpg" alt=""></li>
+                <li class="feature-item"><img src="img/feature1.jpg" alt="" class="fadein">
+                    <div class="item-text">
+                        <p class="text-title">
+                            category
+                        </p>
+                        <p class="text-article">
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                        <p class="text-date">
+                            XXXX.XX.XX
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item"><img src="img/feature2.jpg" alt="" class="fadein">
+                    <div class="item-text">
+                        <p class="text-title">
+                            category
+                        </p>
+                        <p class="text-article">
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                        <p class="text-date">
+                            XXXX.XX.XX
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item"><img src="img/feature3.jpg" alt="" class="fadein">
+                    <div class="item-text">
+                        <p class="text-title">
+                            category
+                        </p>
+                        <p class="text-article">
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                        <p class="text-date">
+                            XXXX.XX.XX
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item"><img src="img/feature4.jpg" alt="" class="fadein">
+                    <div class="item-text">
+                        <p class="text-title">
+                            category
+                        </p>
+                        <p class="text-article">
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                        <p class="text-date">
+                            XXXX.XX.XX
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item"><img src="img/feature5.jpg" alt="" class="fadein">
+                    <div class="item-text">
+                        <p class="text-title">
+                            category
+                        </p>
+                        <p class="text-article">
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                        <p class="text-date">
+                            XXXX.XX.XX
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item"><img src="img/feature6.jpg" alt="" class="fadein">
+                    <div class="item-text">
+                        <p class="text-title">
+                            category
+                        </p>
+                        <p class="text-article">
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                        <p class="text-date">
+                            XXXX.XX.XX
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item"><img src="img/feature7.jpg" alt="" class="fadein">
+                    <div class="item-text">
+                        <p class="text-title">
+                            category
+                        </p>
+                        <p class="text-article">
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                        <p class="text-date">
+                            XXXX.XX.XX
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item"><img src="img/feature8.jpg" alt="" class="fadein">
+                    <div class="item-text">
+                        <p class="text-title">
+                            category
+                        </p>
+                        <p class="text-article">
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                        <p class="text-date">
+                            XXXX.XX.XX
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item"><img src="img/feature9.jpg" alt="" class="fadein">
+                    <div class="item-text">
+                        <p class="text-title">
+                            category
+                        </p>
+                        <p class="text-article">
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                        <p class="text-date">
+                            XXXX.XX.XX
+                        </p>
+                    </div>
+                </li>
             </ul>
         </section>
         <section id="contact">
-            <h2 class="sec-title">CONTACT</h2>
-            <div class="contact-text">
-                <p>
-                    テキストテキストテキスト
-                </p>
-                <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト 
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト 
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </p>
-                <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト 
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト 
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </p>
-            </div>
-            <div class="contact-form">
-                <input type="text" name="name">
-                <input type="email" name="email">
-                <input type="text" name="message">
-                <input type="submit" value="SEND">
+            <h2 class="sec-title contact-title">CONTACT</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        テキストテキストテキスト
+                    </p>
+                    <p>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+                <div class="contact-form">
+                    <dl class="input-form">
+                        <dt>Name:</dt>
+                        <dd><input type="text" name="name" class="contact-input"></dd>
+                        <dt>Mail:</dt>
+                        <dd><input type="email" name="email" class="contact-input"></dd>
+                        <dt>Message:</dt>
+                        <dd><input type="text" name="message" class="contact-input"></dd>
+                        <div class="button">
+                            <input type="submit" value="SEND">
+                        </div>
+                    </dl>
+                </div>
             </div>
         </section>
     </main>
     <footer id="footer">
         <small>&copy;<copyright>Sneakers</copyright></small>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
