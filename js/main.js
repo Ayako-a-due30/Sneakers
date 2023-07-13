@@ -9,9 +9,9 @@ const showImg = (entries) => {
       }
     });
   };
-  
+
   const imgObserver = new IntersectionObserver(showImg);
-  
+
   const images = document.querySelectorAll('.fadein');
   images.forEach((image) => {
     imgObserver.observe(image);
@@ -40,11 +40,14 @@ mask.addEventListener('click',()=>{
 const swiper = new Swiper(".swiper",{
   slidesPerView:1.5,
   spaceBetween:10,
+  centeredSlides:true,
+  loop: true,
   breakpoints:{
     960:{
       spaceBetween:10,
       slidesPerView:5,
-      // centeredSlides:true,
+      centeredSlides:true,
+      loop: true,
     }
   }
 },
