@@ -5,6 +5,16 @@ h1 {
   align-items: center;
 }
 
+h2 {
+  color: #BD3147;
+}
+
+.header-logo {
+  margin-left: 10px;
+  font-size: 36px;
+  color: #BD3147;
+}
+
 section {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -39,7 +49,7 @@ section {
 .hamburger-menu span {
   width: 50px;
   height: 3px;
-  background: #212121;
+  background: #304145;
   position: absolute;
   left: 15px;
   transition: 0.4s ease-in-out;
@@ -61,19 +71,19 @@ section {
 }
 
 .hamburger-menu.active {
-  background-color: #212121;
+  background-color: #304145;
   opacity: 0.8;
 }
 
 #site-title.active {
-  background-color: #212121;
+  background-color: #304145;
   opacity: 0.8;
 }
 
 .hamburger-menu.active span:nth-child(1) {
   top: 40px;
   left: 15px;
-  background: #fff;
+  background: #BAC7CE;
   transform: rotate(-45deg);
   opacity: 0.8;
 }
@@ -82,12 +92,12 @@ section {
 .hamburger-menu.active span:nth-child(2),
 .hamburger-menu.active span:nth-child(3) {
   top: 40px;
-  background: #fff;
+  background: #BAC7CE;
   transform: rotate(45deg);
 }
 
 #site-title.active {
-  background-color: #212121;
+  background-color: #304145;
   opacity: 0.8;
 }
 
@@ -102,9 +112,9 @@ section {
   margin-left: 10%;
   margin-right: 10%;
   padding-top: 10%;
-  color: #fff;
+  color: #BAC7CE;
   height: 100%;
-  background-color: #212121;
+  background-color: #304145;
   width: 30%;
   padding-left: 5%;
   padding-right: 5%;
@@ -114,11 +124,11 @@ section {
   bottom: 0;
 }
 #navi.active .nav-menu .menu-item {
-  border-top: #fff solid 1px;
+  border-top: #BAC7CE solid 1px;
   line-height: 4;
 }
 #navi.active .nav-menu .menu-item:last-child {
-  border-bottom: #fff solid 1px;
+  border-bottom: #BAC7CE solid 1px;
 }
 #navi.active .nav-sns {
   margin-top: 20%;
@@ -139,13 +149,13 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #212121;
+  background-color: #304145;
   opacity: 0.8;
   z-index: 2;
   cursor: pointer;
 }
 
-#bg-video {
+img {
   width: 100%;
 }
 
@@ -210,17 +220,17 @@ section {
   margin-top: 200px;
   margin-bottom: 0;
   padding-top: 50px;
-  background-color: #212121;
+  background-color: #304145;
 }
 
 .sec-title.contact-title {
-  color: #fff;
+  color: #BAC7CE;
   font-size: 2.25rem;
 }
 
 .contact-content {
   display: flex;
-  color: #fff;
+  color: #BAC7CE;
   justify-content: space-between;
   padding: 5%;
 }
@@ -246,23 +256,28 @@ section {
   margin: 2%;
 }
 .contact-content .contact-form .button {
-  border: 1px solid #fff;
+  border: 1px solid #BAC7CE;
   height: 20%;
   text-align: center;
   width: 30%;
   vertical-align: middle;
-  padding-top: 3%;
+  padding-top: auto;
+  padding-bottom: auto;
   margin: 2%;
 }
 .contact-content .contact-input {
-  background-color: #fff;
+  background-color: #BAC7CE;
   width: 100%;
   height: 20%;
 }
 
 #footer {
-  background-color: #212121;
-  color: #fff;
+  background-color: #304145;
+  color: #BAC7CE;
+  height: 100px;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 30px;
 }
 
 @media (max-width: 960px) {
@@ -314,10 +329,9 @@ section {
   .contact-content .contact-form .input-form .button {
     width: 100%;
     height: 15%;
-    margin-top: 10%;
   }
   .contact-content .contact-form .input-form .button input {
-    margin: 0;
+    margin-top: 3%;
   }
   #footer {
     height: 30px;
